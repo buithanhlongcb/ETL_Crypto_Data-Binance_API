@@ -22,7 +22,7 @@ Because this notebook is written on Databricks, the file type when in Github is 
 ### Extract:
 By using Binance API to get Data. Also, since this is free, Binance cannot provide real-time data frame (about 8 hours delay)
 
-![](https://imgur.com/Gfg1fbQ)
+![img](https://imgur.com/Gfg1fbQ)
 
 ##### Description:
 
@@ -36,21 +36,21 @@ Parameters:
 
 Read more Binance API: https://binance-docs.github.io/apidocs/spot/en/
 
-![](https://imgur.com/Gfg1fbQ)
+![img](https://imgur.com/Gfg1fbQ)
 ##### Description:
 
 The fetch_data function retrieves cryptocurrency market data (candlestick data) for a specified symbol and interval from Binance’s API. It ensures that new data is fetched by checking if the data already exists in the database (Spark table). If the data is present, the function fetches the data from the last known timestamp. Otherwise, it retrieves historical data starting from January 1, 2012. This is the main function for streaming extract.
 
 ### Transform
 
-![](https://imgur.com/7tHmQIh)
+![img](https://imgur.com/7tHmQIh)
 
 ##### Description:
 The transform_data function processes and transforms a Spark DataFrame containing cryptocurrency candlestick data by applying column modifications. You can change what you want to transform your Dataframe to here.
 
 ### Load
 
-![](https://imgur.com/jAUpruq)
+![img](https://imgur.com/jAUpruq)
 
 ##### Description:
 The load_dataframe function writes a Spark DataFrame into a database table.
