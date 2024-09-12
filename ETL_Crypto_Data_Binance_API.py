@@ -184,10 +184,11 @@ display(df_fetched.describe())
 
 # COMMAND ----------
 
-if spark.catalog._jcatalog.tableExists(f"dbo.{symbol}_{interval}"):
-    df_fetched.write.mode('append').saveAsTable(f"dbo.{symbol}_{interval}")
-else:
-    df_fetched.write.saveAsTable(f"dbo.{symbol}_{interval}")
+def load_dataframe(df, symbol,interval):
+    if spark.catalog._jcatalog.tableExists(f"dbo.{symbol}_{interval}"):
+        df_fetched.write.mode('append').saveAsTable(f"dbo.{symbol}_{interval}")
+    else:
+        df_fetched.write.saveAsTable(f"dbo.{symbol}_{interval}")
 
 # COMMAND ----------
 
