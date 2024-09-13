@@ -36,7 +36,9 @@ Parameters:
 
 Read more Binance API: ![here](https://binance-docs.github.io/apidocs/spot/en/)
 
-![Fetch](https://github.com/user-attachments/assets/f7c9b7d7-1cfd-48a3-971f-8f9135639241)##### Description:
+![Fetch](https://github.com/user-attachments/assets/f7c9b7d7-1cfd-48a3-971f-8f9135639241)
+
+##### Description:
 
 The fetch_data function retrieves cryptocurrency market data (candlestick data) for a specified symbol and interval from Binance’s API. It ensures that new data is fetched by checking if the data already exists in the database (Spark table). If the data is present, the function fetches the data from the last known timestamp. Otherwise, it retrieves historical data starting from January 1, 2012. This is the main function for streaming extract.
 
