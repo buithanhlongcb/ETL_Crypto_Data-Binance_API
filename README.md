@@ -34,7 +34,7 @@ Parameters:
 - end_time (int): The ending timestamp (in milliseconds) where data retrieval stops.
 - limit (int, optional): The maximum number of records per API request (default is 1000).
 
-Read more Binance API: ![here](https://binance-docs.github.io/apidocs/spot/en/)
+Read more Binance API: [here](https://binance-docs.github.io/apidocs/spot/en/)
 
 ![Fetch](https://github.com/user-attachments/assets/f7c9b7d7-1cfd-48a3-971f-8f9135639241)
 
