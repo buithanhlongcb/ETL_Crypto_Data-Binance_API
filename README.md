@@ -14,7 +14,7 @@ Main steps: Can be streaming by Apache Spark to collect DataFrame
 Bonus step: I initially thought it would be interesting to build a model to forecast BTC price and become wealthy, but after spending 3 days trying to figure out how to build a model that runs on streaming , I realized the not fun.
 - Build SARIMA online-learning model (but it's so bad :D)
 
-**Warning: This article is for educational purposes only. Please do not follow it!!!(I think you are crazy to follow terrify model like this repo)**
+**Warning: This article is for educational purposes only. Please do not follow it!!!**
 
 ## Work-flow
 
